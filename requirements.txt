@@ -1,0 +1,6 @@
+whisper
+pydub
+torch
+tqdm
+python-docx
+requests
