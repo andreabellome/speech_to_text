@@ -28,9 +28,11 @@ The requirements are listed below:
 
 - To run medium and large [whisper](https://github.com/openai/whisper) models, one should have at least 2 GB on the hard disk. Please check the documentation.
 
-- (Optional) To run the model on the local GPU, if available, you need to install [CUDA](https://developer.nvidia.com/cuda-downloads). Use the script joudiciously.
+- (Optional) To run the model on the local GPU, if available, you need to install [CUDA](https://developer.nvidia.com/cuda-downloads).
 
 - (Optional) To integrate [ollama](https://ollama.com/) models to do other operations on the text (e.g., summarize, ask information,...) one could also install [ollama llama3](https://ollama.com/). To integrate ollama, before starting the script run ```ollama serve```. Please check [audioTranscriber](audioTranscriber.py) to see how ollama can be integrated.
+
+Please use the script joudiciously as it might take high computational effort.
 
 ## License
 
