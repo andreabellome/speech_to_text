@@ -17,7 +17,7 @@ print( result )
 # summarize the result
 resultTextSummary = transcriber.summarize_text_llama3( filename1 )
 
-# print the 
+# print the text summary
 print(resultTextSummary)
 
 # Save the transcription to a text file
