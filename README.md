@@ -67,4 +67,6 @@ filename1 = 'transcription.txt'
 transcriber.save_to_txt(result, filename1)
 ```
 
+Be careful as the code might take high computational effort and time, especially if not working on GPU.
+
 Happy coding!
