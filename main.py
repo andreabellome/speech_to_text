@@ -5,7 +5,7 @@ from audioTranscriber import AudioTranscriber
 transcriber = AudioTranscriber( model_name="large-v2" )
 
 # Transcribe the large audio file
-result = transcriber.transcribe_large_file("audio1.m4a")
+result = transcriber.transcribe_large_file("pcm_24_06_2024.m4a")
 
 # Save the transcription to a text file
 filename1 = 'transcription_model_large_v2.txt'
@@ -14,12 +14,20 @@ transcriber.save_to_txt(result, filename1)
 # Print the transcription
 print( result )
 
-# summarize the result
-resultTextSummary = transcriber.summarize_text_llama3( filename1 )
+# try to summarize the text extracted from the model using llama
+try:
 
-# print the text summary
-print(resultTextSummary)
+    # summarize the result
+    resultTextSummary = transcriber.summarize_text_llama3( filename1 )
 
-# Save the transcription to a text file
-filename3 = 'transcription_model_large_summary.txt'
-transcriber.save_to_txt(resultTextSummary, filename3)
+    # print the text summary
+    print(resultTextSummary)
+
+    # Save the transcription to a text file
+    filename3 = 'transcription_model_large_summary.txt'
+    transcriber.save_to_txt(resultTextSummary, filename3)
+
+except:
+
+    # print the exception raised
+    print( "Something went wrong with llama model. Please verify the installation and running." )
