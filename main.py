@@ -8,7 +8,7 @@ transcriber = AudioTranscriber(model_name="large-v2")
 result = transcriber.transcribe_large_file("cyber_evol_sal_27_08_2024.m4a")
 
 # Save the transcription to a text file
-filename1 = "transcription_model_large_v2.txt"
+filename1 = "transcription_cyber_evol_sal_27_08_2024.txt"
 transcriber.save_to_txt(result, filename1)
 
 # Print the transcription
