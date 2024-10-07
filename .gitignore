@@ -5,5 +5,5 @@
 
 *txt
 
-audio_files/
+audio_files/*
 /__pycache__
